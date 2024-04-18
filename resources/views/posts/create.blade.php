@@ -1,9 +1,12 @@
-<!DOCTYPE HTML>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <title>Blog</title>
-    </head>
+<x-app-layout>
+    <x-slot name="header">
+    <!DOCTYPE HTML>
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+        <head>
+            <meta charset="utf-8">
+            <title>Blog</title>
+        </head>
+    </x-slot>
     <body>
         <h1>Blog Name</h1>
         <form action="/posts" method="POST">
@@ -29,6 +32,6 @@
         <div class="footer">
             <a href="/">戻る</a>
         </div>
-       
     </body>
-</html>
+    </html>
+</x-app-layout>
